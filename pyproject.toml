@@ -1,8 +1,17 @@
 [project]
 name = "task-tracker"
 version = "0.1.0"
-description = "Внутренний трекер задач для команды разработки"
+description = "Async task tracker API (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redis)"
 requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "Konstantin Fatykov", email = "konstantinfatykov03@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Framework :: FastAPI",
+    "Private :: Do Not Upload",
+]
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",
@@ -26,7 +35,7 @@ dev = [
 ]
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
