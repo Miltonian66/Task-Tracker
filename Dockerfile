@@ -16,6 +16,7 @@ RUN pip install --upgrade pip \
     && pip install .
 
 COPY app ./app
+COPY alembic.ini ./
 
 RUN useradd --create-home --uid 1000 appuser \
     && chown -R appuser:appuser /app

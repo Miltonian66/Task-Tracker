@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from app.api.tasks import router as tasks_router
 from app.cache import dispose_cache, init_cache
 from app.config import get_settings
-from app.database import create_all, dispose_engine, init_engine
+from app.database import dispose_engine, init_engine
 from app.exceptions import register_exception_handlers
 
 logging.basicConfig(
@@ -24,7 +24,6 @@ async def lifespan(_: FastAPI):
     logger.info("Starting %s (debug=%s)", settings.app_name, settings.debug)
 
     init_engine()
-    await create_all()
     await init_cache()
     try:
         yield
