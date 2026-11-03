@@ -5,7 +5,7 @@ description = "Async task tracker API (FastAPI, SQLAlchemy 2.0, PostgreSQL, Redi
 requires-python = ">=3.11"
 license = "MIT"
 authors = [
-    { name = "Konstantin Fatykov", email = "konstantinfatykov03@gmail.com" },
+    { name = "Konstantin Fatykov", email = "fatikov.kostya152@gmail.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3.11",
